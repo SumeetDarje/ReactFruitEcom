@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import CardList from "./CardList";
 import { useEffect, useState } from "react";
-import SignupPage from "./SignUpPage";
+// import SignupPage from "./SignUpPage";
 import LoginPage from "./LoginPage";
 import AdminPage from "./AdminPage";
 import axios from "axios";
