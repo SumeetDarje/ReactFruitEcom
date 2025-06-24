@@ -15,7 +15,7 @@ function SignupPage(props) {
     checkUserExists(user);
   }
   async function checkUserExists(user) {
-    let response = await axios("http://localhost:3000/users");
+    let response = await axios("https://json-backend-5h44.onrender.com/users");
     let data = await response.data;
     let filteredData = data.filter((e, index) => e.emailid == user.emailid);
     if (filteredData.length >= 1) {
@@ -27,7 +27,7 @@ function SignupPage(props) {
     }
   }
   async function addUser(user) {
-    let response = await axios.post("http://localhost:3000/users", user);
+    let response = await axios.post("https://json-backend-5h44.onrender.com/users", user);
     setSignupStatus("success");
   }
   function handleLoginClick() {

@@ -15,7 +15,7 @@ function AdminPage(props){
       
   async function handleDeleteButton(){
     if(window.confirm(`Are you sure you want to delete ${card.name} ?`)){
-      let response = await axios.delete(`http://localhost:3000/fruits/${card.id}`);
+      let response = await axios.delete(`https://json-backend-5h44.onrender.com/fruits/${card.id}`);
       props.onDeleteBtn(card);
       console.log("Delete "+response);
     }else{

@@ -198,7 +198,7 @@ function Assi66() {
       setLoadFlag(false);
       // setUserView("products");
     }, 1500);
-    let response = await axios("http://localhost:3000/fruits");
+    let response = await axios("https://json-backend-5h44.onrender.com/fruits");
     let fList = await response.data;
     // setLoadFlag(false);
     console.log("Loaded " + fList.length);

@@ -78,7 +78,7 @@ function AdminProductFormSample(props) {
   async function updateBackendProduct(product) {
     setFlagLoader(true);
     let response = await axios.put(
-      "http://localhost:3000/fruits/" + product.id,
+      "https://json-backend-5h44.onrender.com/fruits/" + product.id,
       product
     );
     props.onProductEditFormSubmit(product);
@@ -86,7 +86,7 @@ function AdminProductFormSample(props) {
   }
   async function addToBackendProduct(product) {
     // setFlagLoader(true);
-    let response = await axios.post("http://localhost:3000/fruits", product);
+    let response = await axios.post("https://json-backend-5h44.onrender.com/fruits", product);
     let data = await response.data;
     console.log("Added");
     // console.log(data);
