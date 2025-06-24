@@ -94,7 +94,7 @@ function Assi66() {
       getData();
     }
 
-    // getData();
+    getData();
   }, []);
 
   function handleAddToCartBtn(selectedIndex, action) {
