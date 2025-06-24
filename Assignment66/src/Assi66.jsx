@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import CardList from "./CardList";
 import { useEffect, useState } from "react";
-// import SignupPage from "./SignUpPage";
+import SignupPage from "./SignupPage";
 import LoginPage from "./LoginPage";
 import AdminPage from "./AdminPage";
 import axios from "axios";
@@ -393,9 +393,9 @@ function Assi66() {
   }
 
   function handleLogoImgClick() {
-    if(!userName==""){
+    if (!userName == "") {
       setUserView("user");
-    }else{  
+    } else {
       setUserView("products");
     }
   }
