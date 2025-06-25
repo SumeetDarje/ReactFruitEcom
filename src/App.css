@@ -10,7 +10,7 @@
 }
 
 .containerMargin1{
-  margin-top: 240px;
+  margin-top: 245px;
 }
 
 .bgRed{
@@ -38,7 +38,7 @@
 }
 
 .myBorder{
-  border: red solid 2px;
+  border: red solid 1px;
   border-radius: 10px;
   position: relative;
 }
